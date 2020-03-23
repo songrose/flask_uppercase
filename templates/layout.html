@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+        <title>Flask Blog - {{title}}</title>
+        {% else %}
+        <title>Flask Blog</title>
+        {% endif %}
+
+           <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+<body>
+
+
+    {% block content %}{% endblock %}
+
+
+
+</body>
+</html>
